@@ -28,19 +28,47 @@ header {
     background: #0b4bfb;
   }
   .imagen {
-    padding-left: 800px;
-   
+    padding-left: 1400px;
+    position: relative;
+    bottom: 3em;
 
   }
-  .imagen:hover {
 
-    background:  rgba(195, 169, 185, 0.7);
+  .bien {
+
+    font-family: sans-serif; 
+    font-size: 20px; 
+    font-weight: 400; 
+    color: #ffffff; 
+    background:#ee0467
    
 
   }
 
   .logo {
     width: 90px;
-    height: 70px;
+    height: 60px;
+ 
     
   }
+  .imagen1 {
+    width: 180px;
+    height: 90px;
+float: left;
+  }
+  .imagen2 {
+    width: 180px;
+    height: 90px;
+float: right;
+  }
+  .bien1 {
+
+    font-family: sans-serif; 
+    font-size: 25px; 
+    font-weight: 400; 
+    color: #ffffff; 
+    background:#ee0467
+
+
+  }
+
