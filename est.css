@@ -1,0 +1,46 @@
+header {
+    background: rgba(195, 169, 185, 0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  nav {
+    float: left;
+
+  }
+ 
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  nav ul li {
+    float: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+    font-size: 20px;
+  }
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: rgb(7, 5, 5);
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #0b4bfb;
+  }
+  .imagen {
+    padding-left: 800px;
+   
+
+  }
+  .imagen:hover {
+
+    background:  rgba(195, 169, 185, 0.7);
+   
+
+  }
+
+  .logo {
+    width: 90px;
+    height: 70px;
+    
+  }
