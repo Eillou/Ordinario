@@ -9,12 +9,13 @@
         <nav>
             <ul>
             <li ><a href="inicio.html">Inicio</a></li>
-            <li ><a href="iniciar.html">Iniciar sesion o regsitrarse</a></li>
+            <li ><a href="iniciar.html">Iniciar sesion</a></li>
+            <li ><a href="registro.html">Registrarse</a></li>
             <li ><a href="comprar.html">Comprar</a></l>
             <li ><a href="carrito.html">Carrito</a></l>
                 
          </ul>
-         <li class="imagen"> <img class="logo" src="logo.jpg"></l>
+         <li class="imagen"> <img class="logo" src="imagenes/compra.jpg"></l>
         </nav>
       
 
@@ -26,26 +27,14 @@
        <form action="s.php" method="post" enctype="multipart/form-data">
         
        <fieldset>
-         <legend> <mark>Registrarse</mark></legend>
-               <label  for="name">Nombre</label>
+         <legend> <mark>Iniciar sesión</mark></legend>
+                <label  for="name">Usuario</label>
+                <br>
+                <input type="text" id="name" name="Usuario" placeholder="Usuario" required>
                <br>
-               <input type="text" id="name" name="nombre" placeholder="Nombre" required>
+               <label  for="name">Contraseña </label>
                <br>
-               <label  for="name">Apellido </label>
-               <br>
-               <input  type="text" id="name" name="Apellido" required>
-               <br>
-               <label for="msg">Direccion</label>
-               <br>
-               <input type="text" id="text" name="Direccion" placeholder="Direccion" required>
-               <br>
-               <label for="name">Tarjeta</label>
-               <br>
-               <input type="text" id="text" name="Tarjeta" placeholder="Numero de tarjeta" required>
-               <br>
-               <label for="msg">NUmero de telefono</label>
-               <br>
-               <input type="text" id="date" name="num" required>              
+               <input  type="password" id="name" name="Contraseña" required>
                <br>
                <br>
                <input type="submit" value="Enviar">

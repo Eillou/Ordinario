@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Pipo</title> <b>
+        <link rel="stylesheet" href="est.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li ><a href="inicio.html">Inicio</a></li>
+            <li ><a href="iniciar.html">Iniciar sesion</a></li>
+            <li ><a href="registro.html">Registrarse</a></li>
+            <li ><a href="comprar.html">Comprar</a></l>
+            <li ><a href="carrito.html">Carrito</a></l>
+                
+         </ul>
+         <li class="imagen"> <img class="logo" src="imagenes/compra.jpg"></l>
+        </nav>
+      
+
+    </header>
+    <p class="bien">
+        Bienvenido a la tienda online de Pipo donde podras encontrar gran variedad de productos como prendas de vestir y  basicos del hogar 
+       </p>
+       <br><br><br><br><br><br>
+       <form action="s.php" method="post" enctype="multipart/form-data">
+        
+       <fieldset>
+         <legend> <mark>Registrarse</mark></legend>
+               <label  for="name">Usuario</label>
+               <br>
+               <input type="text" id="name" name="Usuario" placeholder="Usuario" required>
+               <br><br>
+               <label for="msg">Direccion</label>
+               <br>
+               <input type="text" id="text" name="Direccion" placeholder="Direccion" required>
+               <div class="pago">
+                    <br>
+                    <div class="dueño">
+                        <label for="Dueño">Propietario</label>
+                        <br>
+                        <input type="text" class="control" id="Dueño" placeholder="Nombre">
+                    </div>
+                    <br>
+                    <div class="CVV">
+                        <label for="cvv" placeholder="CVV">CVV</label>
+                        <br>
+                        <input type="text" class="control" id="cvv">
+                    </div>
+                    <br>
+                    <div class="grupo" id="cardNumber">
+                        <label for="cardNumber">Número de tarjeta</label>
+                        <br>
+                        <input type="text" class="form-control" id="cardNumber">
+                    </div>
+                    <br>
+                    <div class="grupo" id="fecha">
+                        <label>Fecha de expiración</label>
+                        <br>
+                        <select>
+                            <option value="01">Enero</option>
+                            <option value="02">Febrero</option>
+                            <option value="03">Marzo</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Mayo</option>
+                            <option value="06">Junio</option>
+                            <option value="07">Julio</option>
+                            <option value="08">Agosot</option>
+                            <option value="09">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Deciembre</option>
+                        </select>
+                        <select>
+                            <option value="16"> 2016</option>
+                            <option value="17"> 2017</option>
+                            <option value="18"> 2018</option>
+                            <option value="19"> 2019</option>
+                            <option value="20"> 2020</option>
+                            <option value="21"> 2021</option>
+                            <option value="22"> 2022</option>
+                            <option value="23"> 2023</option>
+                            <option value="24"> 2024</option>
+                            <option value="25"> 2025</option>
+                            <option value="26"> 2026</option>
+                            <option value="27"> 2027</option>
+                            <option value="28"> 2028</option>
+                        </select>
+                    </div>
+               <br>
+               <label for="msg">Número de teléfono</label>
+               <br>
+               <input type="tel" placeholder="+52" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" name="num" required>              
+               <br>
+               <br>
+               <input type="submit" value="Enviar">
+                 
+     </form>
+
+</body>
+</html>
