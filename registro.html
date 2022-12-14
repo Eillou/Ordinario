@@ -11,17 +11,14 @@
             <li ><a href="inicio.html">Inicio</a></li>
             <li ><a href="iniciar.html">Iniciar sesion</a></li>
             <li ><a href="registro.html">Registrarse</a></li>
-            <li ><a href="comprar.html">Comprar</a></l>
-            <li ><a href="carrito.html">Carrito</a></l>
-                
-         </ul>
-         <li class="imagen"> <img class="logo" src="imagenes/compra.jpg"></l>
+            <li ><a href="compras.html">Comprar</a></l>   
+            </ul>
         </nav>
       
 
     </header>
     <p class="bien">
-        Bienvenido a la tienda online de Pipo donde podras encontrar gran variedad de productos como prendas de vestir y  basicos del hogar 
+        Bienvenido a la tienda online de Pipo donde podras encontrar gran variedad de productos basicos del hogar 
        </p>
        <br><br><br><br><br><br>
        <form action="s.php" method="post" enctype="multipart/form-data">
@@ -46,13 +43,13 @@
                     <div class="CVV">
                         <label for="cvv" placeholder="CVV">CVV</label>
                         <br>
-                        <input type="text" class="control" id="cvv">
+                        <input type="number" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="control" id="cvv" placeholder="cvv">
                     </div>
                     <br>
                     <div class="grupo" id="cardNumber">
                         <label for="cardNumber">Número de tarjeta</label>
                         <br>
-                        <input type="text" class="form-control" id="cardNumber">
+                        <input type="number" maxlength="16" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control" id="cardNumber" placeholder="Tarjeta">
                     </div>
                     <br>
                     <div class="grupo" id="fecha">
@@ -91,7 +88,7 @@
                <br>
                <label for="msg">Número de teléfono</label>
                <br>
-               <input type="tel" placeholder="+52" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" name="num" required>              
+               <input type="tel" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="num" required placeholder="Teléfono +52">              
                <br>
                <br>
                <input type="submit" value="Enviar">

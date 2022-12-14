@@ -25,7 +25,7 @@ header {
     text-decoration: none;
   }
   nav ul li:hover {
-    background: #0b4bfb;
+    background: #a8708863;
   }
   .imagen {
     padding-left: 1400px;
@@ -70,5 +70,12 @@ float: right;
     background:#ee0467
 
 
+  }
+  a.LINK {
+
+    font-family: sans-serif; 
+    font-size: 30px; 
+    font-weight: 500; 
+    color: black; 
   }
 
