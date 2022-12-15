@@ -3,6 +3,7 @@
 <head>
     <title> Pipo</title> <b>
         <link rel="stylesheet" href="est.css"/>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 <body>
     <header>
@@ -29,9 +30,17 @@ Aqui podras comprar cualquiera de nuestros productos desde la comodidad de tu ho
        <br><br><br><br><br><br>
        <p class="bien1">
         <img class="imagen2" src="imagenes/pagina/regis.jpg">
-Una vez que te hayas registrado podras empezar a comprar en nuestra pagina
+        Una vez que te hayas registrado podras empezar a comprar en nuestra pagina
        </p>
-       <br><br><br><br>   <br><br>
+       <br><br><br><br>
+
+        <div id="cajacookies">
+        <p class="LINK"><button onclick="aceptarCookies()" class="boton">Aceptar y cerrar éste mensaje</button>
+        Éste sitio web usa cookies, si permanece aquí acepta su uso.
+        Puede leer más sobre el uso de cookies en nuestra <a class="LINK2" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">política de privacidad</a>.
+        </p>
+        </div>
+
        <div>
         <footer>
          Todos los derechos reservados </p>
@@ -43,4 +52,20 @@ echo date ("d.m.Y H:i:s");
         </footer>
     </div>
 </body>
+<script>
+    function compruebaAceptaCookies() {
+      if(localStorage.aceptaCookies != 'true'){
+        cajacookies.style.display = 'block';
+      }
+    }
+    
+    function aceptarCookies() {
+      localStorage.aceptaCookies = 'true';
+      cajacookies.style.display = 'none';
+    }
+    
+    $(document).ready(function () {
+      compruebaAceptaCookies();
+    });
+    </script>
 </html>
