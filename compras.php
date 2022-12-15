@@ -293,5 +293,8 @@
     </div>
 </body>
     <a class="LINK3" name="Dormitorio" id="Dormitorio">Dormitorio</a>
+    <?php
+include("conexion.php");
+    ?>
 </body>
 </html>

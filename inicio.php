@@ -37,13 +37,12 @@ Aqui podras comprar cualquiera de nuestros productos desde la comodidad de tu ho
         <div id="cajacookies">
         <p class="LINK"><button onclick="aceptarCookies()" class="boton">Aceptar y cerrar éste mensaje</button>
         Éste sitio web usa cookies, si permanece aquí acepta su uso.
-        Puede leer más sobre el uso de cookies en nuestra <a class="LINK2" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">política de privacidad</a>.
+        Puede leer más sobre el uso de cookies en nuestra <?php echo '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">política de privacidad</a>';?>
         </p>
         </div>
-
-       <div>
+       <div> <br>
         <footer>
-         Todos los derechos reservados </p>
+         Todos los derechos reservados
 <?php
 echo date ("d.m.Y H:i:s");
 
@@ -51,6 +50,7 @@ echo date ("d.m.Y H:i:s");
 
         </footer>
     </div>
+
 </body>
 <script>
     function compruebaAceptaCookies() {
@@ -69,3 +69,6 @@ echo date ("d.m.Y H:i:s");
     });
     </script>
 </html>
+<?php
+include("conexion.php");
+    ?>

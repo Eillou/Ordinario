@@ -23,7 +23,9 @@
     <p class="bien">
         Bienvenido a la tienda online de Pipo donde podras encontrar gran variedad de productos como prendas de vestir y  basicos del hogar 
        </p>
-     
+       <?php
+include("conexion.php");
+    ?>
 
 </body>
 </html>

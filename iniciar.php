@@ -21,10 +21,9 @@
         Bienvenido a la tienda online de Pipo donde podras encontrar gran variedad de productos basicos del hogar 
        </p>
        <br><br><br><br><br><br>
-       <form  method="post">
-        
+       <form action="sesion.php" method="post">
        <fieldset>
-         <legend> <mark>Iniciar sesión</mark></legend>
+         <legend> <mark>Iniciar sesión</mark></legend> 
                 <label  for="name">Usuario</label>
                 <br>
                 <input type="text" id="name" name="Usuario" placeholder="Usuario" required>
@@ -37,6 +36,8 @@
                <input type="submit" value="Enviar">
                  
      </form>
-
+     <?php
+include("conexion.php");
+    ?>
 </body>
 </html>
