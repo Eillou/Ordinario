@@ -54,20 +54,26 @@ background-size: 64px 128px;
   }
 
   .logo {
-    width: 90px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
  
     
   }
-  .imagen1 {
-    width: 180px;
-    height: 90px;
+  img.imagen1 {
+
+    width: 425px;
+    height: 280px;
 float: left;
+margin-left: 20px;
+margin-right: 20px;
+box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
   }
-  .imagen2 {
-    width: 180px;
-    height: 90px;
-float: right;
+  img.imagen2 {
+    width: 450px;
+    height: 300px;
+  float:right;
+  margin-right: 20px;
+  box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
   }
   .bien1 {
 
@@ -123,29 +129,7 @@ border-radius: 35px 0px 35px 0px;
 -webkit-border-radius: 35px 0px 35px 0px; 
 
   }
-  P.LINK {
 
-    font-family: sans-serif; 
-    font-size: 20px; 
-    font-weight: 500; 
-    color: #565264; 
-  }
-
-  #cajacookies {
-    box-shadow: inset 0px 0px 5px 5px #d386d3a4;
-    background-color: #d386d3;
-    color: #565264;
-    padding: 50px;
-    margin:0 auto;
-    text-align: center;
-    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
-  }
-  
-  button.boton {
-    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
-    background-color: rgba(25, 0, 255, 0.521);
-    
-  }
   button.boton:hover {
     background: #ff000063;
     box-shadow: 8px 10px 10px 1px #ff000063;;
@@ -154,3 +138,103 @@ border-radius: 35px 0px 35px 0px;
     color:#565264;
   }
 
+  main {
+    margin: 20px auto;
+    max-width: 1000px;
+    background: #fff;
+    min-height: 80vh;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .parrafo {
+    margin-bottom: 20px;
+    line-height: 150%;
+  }
+  
+  main {
+    margin: 20px auto;
+    max-width: 1000px;
+    background: #fff;
+    min-height: 80vh;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .aviso-cookies {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    line-height: 150%;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    padding-top: 60px;
+    box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+    text-align: center;
+  }
+  
+  .aviso-cookies.activo {
+    display: block;
+  }
+  
+  .aviso-cookies .galleta {
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .aviso-cookies .titulo,
+  .aviso-cookies .parrafo {
+    margin-bottom: 15px;
+  }
+  
+  .aviso-cookies .boton {
+    width: 100%;
+    background: #595959;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .aviso-cookies .boton:hover {
+    background: #000;
+  }
+  
+  .aviso-cookies .enlace {
+    color: #4DBFFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .aviso-cookies .enlace:hover {
+    text-decoration: underline;
+  }
+  
+  .fondo-aviso-cookies {
+    display: none;
+    background: rgba(0,0,0,.20);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  
+  .fondo-aviso-cookies.activo {
+    display: block;
+  }

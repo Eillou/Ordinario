@@ -9,7 +9,7 @@
         <nav>
             <ul>
             <li ><a href="inicio.php">Inicio</a></li>
-            <li ><a href="iniciar.php">Iniciar sesion</a></li>
+            <li ><a href="iniciar.php">Iniciar sesión</a></li>
             <li ><a href="registro.php">Registrarse</a></li>
             <li ><a href="compras.php">Comprar</a></l>   
             </ul>
@@ -18,7 +18,7 @@
 
     </header>
     <p class="bien">
-        Bienvenido a la tienda online de Pipo donde podras encontrar gran variedad de productos basicos del hogar 
+        Bienvenido a la tienda online de Pipo donde podrás encontrar gran variedad de productos básicos del hogar 
        </p>
        <br><br><br><br><br><br>
        <form  method="post" >
@@ -33,7 +33,7 @@
                <br>
                <input  type="password" id="name" name="Contraseña" placeholder="Contraseña" required>
                <br><br>
-               <label for="msg">Direccion</label>
+               <label for="msg">Dirección</label>
                <br>
                <input type="text" id="text" name="Direccion" placeholder="Direccion" required>
                <div class="pago">
