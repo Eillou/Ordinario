@@ -7,8 +7,8 @@ if(!isset($_SESSION['Usuario'])){
 
     <script>
 
-alert("Debe iniciar sesion");
-window.location = "iniciar.php";
+alert("Gracias por iniciar sesion");
+window.location = "compras.php";
     </script>
     ';
     alert("Debe iniciar sesion");
