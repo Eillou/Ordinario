@@ -7,16 +7,15 @@ if(!isset($_SESSION['Usuario'])){
 
     <script>
 
-alert("Gracias por iniciar sesion");
-window.location = "compras.php";
+alert("Debes iniciar sesión");
+window.location = "iniciar.php";
     </script>
     ';
-    alert("Debe iniciar sesion");
+    
     header("location:iniciar.php");
-    session_destroy();
     die();
-
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +29,7 @@ window.location = "compras.php";
         <nav>
             <ul></ul>
             <ul>
-            <li ><a href="inicio.php">Inicio</a></li>
+            <li ><a href="index.php">Inicio</a></li>
             <li ><a href="#Cocina">Cocina</a></li>
             <li ><a href="#Terraza">Terraza</a></li>
             <li ><a href="#Dormitorio">Dormitorio</a></l>

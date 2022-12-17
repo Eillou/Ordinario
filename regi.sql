@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-12-2022 a las 08:53:41
+-- Tiempo de generación: 17-12-2022 a las 01:25:34
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.1.12
 
@@ -44,7 +44,10 @@ CREATE TABLE `regi` (
 --
 
 INSERT INTO `regi` (`id`, `usuario`, `contraseña`, `direccion`, `propietario`, `cvv`, `num_tar`, `fecha`, `num_tel`) VALUES
-(3, 'Eillou', '123', 'calle 14a num 38 por 35 y 35a', 'Eduardo', 342, 0, '0000-00-00', 2147483647);
+(6, ' Caro', ' 123', 'calle 14a num 38 por 35 y 35a', 'Carolina', 123, 2147483647, '0000-00-00', 2147483647),
+(7, ' Edu', ' 123', 'calle 14a num 38 por 35 y 35a', 'Eduardo', 432, 2147483647, '0000-00-00', 2147483647),
+(8, ' Josh', ' 123', 'calle 14a num 38 por 35 y 35a', 'Joshua', 134, 2147483647, '0000-00-00', 2147483647),
+(9, ' Larson', ' 123', 'calle 14a num 38 por 35 y 35a', 'Larson', 653, 2147483647, '0000-00-00', 2147483647);
 
 --
 -- Índices para tablas volcadas
@@ -64,7 +67,7 @@ ALTER TABLE `regi`
 -- AUTO_INCREMENT de la tabla `regi`
 --
 ALTER TABLE `regi`
-  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -8,7 +8,7 @@
     <header>
         <nav>
             <ul>
-            <li ><a href="inicio.php">Inicio</a></li>
+            <li ><a href="index.php">Inicio</a></li>
             <li ><a href="iniciar.php">Iniciar sesión</a></li>
             <li ><a href="registro.php">Registrarse</a></li>
             <li ><a href="compras.php">Comprar</a></l>   

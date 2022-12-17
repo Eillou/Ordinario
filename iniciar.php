@@ -1,4 +1,11 @@
 
+<?php
+
+session_start();
+if(isset($_SESSION['Usuario'])){
+header("location = compras.php");
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -10,7 +17,7 @@
     <header>
         <nav>
             <ul>
-            <li ><a href="inicio.php">Inicio</a></li>
+            <li ><a href="index.php">Inicio</a></li>
             <li ><a href="iniciar.php">Iniciar sesión</a></li>
             <li ><a href="registro.php">Registrarse</a></li>
             <li ><a href="compras.php">Comprar</a></l>      
@@ -23,7 +30,7 @@
         Bienvenido a la tienda online de Pipo donde podrás encontrar gran variedad de productos básicos del hogar 
        </p>
        <br><br><br><br><br><br>
-       <form action="sesion.php" method="post">
+       <form action="sesion.php" method="POST">
        <fieldset>
          <legend> <mark>Iniciar sesión</mark></legend> 
                 <label  for="name">Usuario</label>
@@ -32,7 +39,7 @@
                <br>
                <label  for="name">Contraseña </label>
                <br>
-               <input  type="password" id="name" name="Contraseña" placeholder="Contraseña" required>
+               <input  type="password" id="name" name="Usuario" placeholder="Contraseña" required>
                <br>
                <br>
                <input type="submit" value="Enviar">

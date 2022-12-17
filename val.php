@@ -2,15 +2,15 @@
 <?php
 include("conexion.php");
 if (isset($_POST['register'])) {
-    if (strlen($_POST['Usuario']) >= 1 && strlen($_POST['Contraseña']) >= 1 && strlen($_POST['Direccion']) >= 1 && strlen($_POST['Propietario']) >= 1  && strlen($_POST['cvv']) >= 1  && strlen($_POST['num_tar']) >= 1  && strlen($_POST['num_tel']) >= 1) {
+    if (strlen($_POST['Usuario']) >= 1 && strlen($_POST['Contraseña']) >= 1 && strlen($_POST['Direccion']) >= 1 && strlen($_POST['Propietario']) >= 1  && strlen($_POST['cvv']) >= 1  && strlen($_POST['tar']) >= 1  && strlen($_POST['tel']) >= 1) {
 	    $Usuario = trim($_POST['Usuario']);
 	    $Contraseña = trim($_POST['Contraseña']);
 		$Direccion = TRIM($_POST['Direccion']);
 		$Propietario = TRIM($_POST['Propietario']);		
 	    $cvv = TRIM($_POST['cvv']);		
-        $tar= TRIM($_POST['num_tar']);		
+        $tar= TRIM($_POST['tar']);		
       	
-        $tel = TRIM($_POST['num_tel']);		
+        $tel = TRIM($_POST['tel']);		
         	
 	    $consulta = "INSERT INTO regi(usuario, contraseña, direccion, propietario, cvv, num_tar, num_tel) VALUES (' $Usuario',' $Contraseña','$Direccion','$Propietario','   $cvv ','$tar',' $tel')";
 	    $resultado = mysqli_query($conex,$consulta);
